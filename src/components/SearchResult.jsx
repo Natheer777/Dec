@@ -21,7 +21,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './SearchResult.css';
 
-const SearchResult = ({ name, email, password }) => {
+const SearchResult = ({ name, details, more }) => {
   const { t } = useTranslation(); // Hook to access translations
 
   return (
@@ -34,11 +34,11 @@ const SearchResult = ({ name, email, password }) => {
           </tr>
           <tr>
             <th>{t('email')}</th>
-            <td>{email}</td>
+            <td>{details}</td>
           </tr>
           <tr>
             <th>{t('password')}</th>
-            <td>{password}</td>
+            <td>{more}</td>
           </tr>
         </tbody>
       </table>

@@ -15,8 +15,8 @@ export const SearchBar = ({ setResults }) => {
         const results = json.filter((user) => {
           const searchValue = value.toLowerCase().trim(); // تحويل القيمة المدخلة إلى صيغة مناسبة للبحث
           const userName = user.name.toLowerCase(); // تحويل اسم المستخدم إلى صيغة مناسبة للمقارنة
-          const userEmail = user.email.toLowerCase(); // تحويل بريد المستخدم إلى صيغة مناسبة للمقارنة
-          const userPassword = user.password.toLowerCase(); // تحويل كلمة المرور إلى صيغة مناسبة للمقارنة
+          const userEmail = user.details.toLowerCase(); // تحويل بريد المستخدم إلى صيغة مناسبة للمقارنة
+          const userPassword = user.more.toLowerCase(); // تحويل كلمة المرور إلى صيغة مناسبة للمقارنة
   
           // البحث عن النتائج التي تحتوي على القيمة المدخلة في أي من الحقول
           return (
