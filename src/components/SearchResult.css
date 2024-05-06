@@ -1,0 +1,40 @@
+/* .search-result {
+  padding: 10px 20px;
+}
+
+.search-result:hover {
+  background-color: #efefef;
+} */
+/* SearchResult.css */
+
+.search-result {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.result-table th,
+.result-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.result-table th {
+  text-align: left;
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+.result-table td {
+  text-align: left;
+}
+
+.result-table td:first-child {
+  width: 120px;
+}
