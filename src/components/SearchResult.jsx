@@ -29,15 +29,15 @@ const SearchResult = ({ name, details, more }) => {
       <table className="result-table">
         <tbody>
           <tr>
-            <th>{t('name')}</th>
+            <th>{t('الكلمة')}</th>
             <td>{name}</td>
           </tr>
           <tr>
-            <th>{t('email')}</th>
+            <th>{t('المعنى')}</th>
             <td>{details}</td>
           </tr>
           <tr>
-            <th>{t('password')}</th>
+            <th>{t('الترجمة')}</th>
             <td>{more}</td>
           </tr>
         </tbody>

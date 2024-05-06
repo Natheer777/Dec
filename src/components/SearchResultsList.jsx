@@ -33,8 +33,8 @@ const SearchResultsList = ({ results }) => {
         <SearchResult
           key={id}
           name={result.name}
-          email={result.details}
-          password={result.more}
+          details={result.details}
+          more={result.more}
         />
       ))}
     </div>
